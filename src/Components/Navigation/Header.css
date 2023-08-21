@@ -1,0 +1,65 @@
+.navbar {
+  width: 100%;
+  box-shadow: 0px 0px 6px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  margin-left: 5%;
+}
+
+.navLogo img {
+  height: 3em;
+}
+
+.navMenu ul {
+  display: flex;
+  flex: row;
+  margin-right: 100px;
+  align-content: center;
+}
+li:first-child {
+  font-weight: bold;
+}
+li {
+  padding-left: 50px;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+a:hover {
+  color: #225ecc;
+}
+
+.btn {
+  border-radius: 5px;
+  color: white;
+  background-color: #225ecc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.login {
+  padding: 10px 20px 13px 20px;
+}
+
+.btn:hover {
+  transition: ease-in-out 0.4s;
+  background-color: #5991f8;
+  color: white;
+  -webkit-transition: ease-in-out 0.4s;
+  -moz-transition: ease-in-out 0.4s;
+  -ms-transition: ease-in-out 0.4s;
+  -o-transition: ease-in-out 0.4s;
+}

@@ -1,0 +1,39 @@
+.Container {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 4% 8%;
+}
+.slide-animation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.first-Content {
+  padding: 20px 100px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 5px 5px 10px -5px;
+}
+
+p {
+  margin-top: 2%;
+  color: black;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.getStarted {
+  margin-top: 4em;
+  font-size: 18px;
+  padding: 15px 50px;
+  border: none;
+  box-shadow: 2px 2px 2px;
+}

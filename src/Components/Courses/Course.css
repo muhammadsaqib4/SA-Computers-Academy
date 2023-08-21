@@ -1,0 +1,44 @@
+.Course-Category {
+  margin-top: 8%;
+  text-align: center;
+  line-height: 15px;
+}
+
+.gridBox {
+  /* width: auo; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 50vh);
+
+  overflow: hidden;
+  justify-content: center;
+  gap: 18px;
+  padding: 10px;
+}
+.course-Items {
+  margin-top: 4%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+}
+.icon-img i {
+  margin-bottom: 2%;
+  font-size: 35px;
+  border: 2px solid rgb(218, 218, 218);
+  border-radius: 100%;
+  padding: 30px 30px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.icon-img i:hover {
+  background: #225ecc;
+  color: white;
+  transition: ease-in-out 0.4s;
+  -webkit-transition: ease-in-out 0.4s;
+  -moz-transition: ease-in-out 0.4s;
+  -ms-transition: ease-in-out 0.4s;
+  -o-transition: ease-in-out 0.4s;
+}
