@@ -1,0 +1,67 @@
+.Courses-gridBox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 50vh);
+  overflow: hidden;
+  justify-content: center;
+  gap: 21px;
+  padding: 10px;
+  margin: 0% 8%;
+}
+.course-items {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fafafa;
+  justify-content: space-between;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.anim-img img {
+  max-height: 100%;
+  border: white 2px solid;
+}
+.anim-img img:hover {
+  border: #225ecc 2px solid;
+  box-shadow: #225ecc 1px 1px 10px;
+  animation: forwards;
+  transition: ease-in 0.6s;
+  -webkit-animation: forwards;
+  -webkit-transition: ease-in 0.6s;
+  -moz-transition: ease-in 0.6s;
+  -ms-transition: ease-in 0.6s;
+  -o-transition: ease-in 0.6s;
+}
+.OurcourseCaption {
+  text-align: left;
+  padding: 25px;
+}
+.OurcourseCaption p {
+  font-size: 14px;
+}
+.takeCourse-btn {
+  margin-top: 1.5em;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  /* border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px; */
+
+  border: 2px solid #225ecc;
+}
+
+.takeCourse-btn:hover {
+  transition: ease-in 0.3s;
+  color: white;
+  background-color: #225ecc;
+  border: 2px solid #225ecc;
+  -webkit-transition: ease-in 0.3s;
+  -moz-transition: ease-in 0.3s;
+  -ms-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+}

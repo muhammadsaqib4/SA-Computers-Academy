@@ -1,0 +1,127 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  padding: 3em;
+  margin: 3em;
+  justify-content: center;
+  justify-content: space-between;
+}
+.Container {
+  text-align: center;
+}
+.salogo {
+  height: 3em;
+}
+
+h1 {
+  text-align: center;
+  line-height: 12px;
+}
+p {
+  font-size: 14px;
+  line-height: 12px;
+}
+
+form {
+  margin-top: 2em;
+}
+
+label {
+  text-align: left;
+  display: none;
+  padding: 10px 0px;
+  display: block;
+  font-family: Open Sans Condensed ", " system-ui ", sans-serif";
+}
+
+form input {
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 1em 1em 1em 0em;
+  width: 100%;
+}
+
+.Signup input {
+  width: 30em;
+}
+
+input:hover {
+  cursor: auto;
+}
+
+button {
+  margin-top: 2em;
+  font-family: Agency FB;
+  font-size: 18px;
+}
+
+#btn-google {
+  background: rgb(70, 143, 239);
+  border: none;
+  color: white;
+  padding: 15px 3.5em;
+  cursor: pointer;
+}
+#btn-google:hover {
+  background: rgb(46, 104, 237);
+
+  transition: ease-in-out 0.4s;
+  transform: 0.7s;
+  -webkit-transition: ease-in-out 0.4s;
+  -moz-transition: ease-in-out 0.4s;
+  -ms-transition: ease-in-out 0.4s;
+  -o-transition: ease-in-out 0.4s;
+  -webkit-transform: 0.7s;
+  -moz-transform: 0.7s;
+  -ms-transform: 0.7s;
+  -o-transform: 0.7s;
+}
+
+#btn-signin {
+  background: #000;
+  border: none;
+  color: white;
+  padding: 15px 5em;
+  cursor: pointer;
+}
+
+#btn-signin:hover {
+  background: rgb(255, 255, 255);
+  color: black;
+  transition: ease-in-out 0.4s;
+  transform: 0.7s;
+  -webkit-transition: ease-in-out 0.4s;
+  -moz-transition: ease-in-out 0.4s;
+  -ms-transition: ease-in-out 0.4s;
+  -o-transition: ease-in-out 0.4s;
+  -webkit-transform: 0.7s;
+  -moz-transform: 0.7s;
+  -ms-transform: 0.7s;
+  -o-transform: 0.7s;
+}
+.buttonFlex {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+#btn-signup {
+  background: #000;
+
+  border: 1px solid;
+  color: white;
+  padding: 15px 5em;
+  cursor: pointer;
+}
+
+#btn-signup:hover {
+  background: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid gray;
+  transition: ease-in-out 0.4s;
+  transform: 0.7s;
+  -webkit-transition: ease-in-out 0.4s;
+  -moz-transition: ease-in-out 0.4s;
+  -ms-transition: ease-in-out 0.4s;
+  -o-transition: ease-in-out 0.4s;
+}

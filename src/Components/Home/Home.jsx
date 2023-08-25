@@ -1,6 +1,11 @@
 import { Fragment } from "react";
-import getStartd from "./getStartd.gif";
+import home from "./home.gif";
 import "./Home.css";
+import EnrolledBanner from "../EnrolledBanner/enrolledStudent";
+import Footer from "../Footer/Footer";
+import Courses from "../Courses/Courses";
+import OurCourses from "../OurCourses/OurCourse";
+import Pricing from "../Pricing/pricing";
 
 function Home() {
   return (
@@ -28,11 +33,16 @@ function Home() {
               Get Started
             </button>
           </div>
-          <div>
-            <img src={getStartd} alt="/" />
+          <div className="gif-animation">
+            <img src={home} alt="/" />
           </div>
         </div>
       </div>
+
+      <Courses />
+      <EnrolledBanner />
+      <OurCourses />
+      <Pricing />
     </Fragment>
   );
 }

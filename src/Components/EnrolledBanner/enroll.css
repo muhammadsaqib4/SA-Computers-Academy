@@ -1,5 +1,4 @@
 .Items {
-  animation: ;
   background: linear-gradient(180deg, #1a2848, 80%, #0b0e1c);
   display: flex;
   flex-direction: row;
@@ -9,16 +8,13 @@
   color: white;
   line-height: 15px;
   align-items: center;
-  -webkit-transition: ease-in 0.1s;
-  -moz-transition: ease-in 0.1s;
-  -ms-transition: ease-in 0.1s;
-  -o-transition: ease-in 0.1s;
-  -webkit-animation: ;
 }
 .img-icon i {
   font-size: 50px;
-  margin-bottom: 15%;
+  margin-bottom: 2%;
 }
 .Items p {
   color: white;
+  font-size: 20px;
+  padding-top: 6%;
 }

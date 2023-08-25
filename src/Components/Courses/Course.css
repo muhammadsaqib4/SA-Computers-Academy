@@ -1,22 +1,25 @@
+.container-course {
+  background: #efefef;
+}
 .Course-Category {
-  margin-top: 8%;
+  margin-top: 1%;
+  padding-top: 30px;
   text-align: center;
-  line-height: 15px;
+  line-height: 13px;
 }
 
 .gridBox {
   /* width: auo; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 50vh);
-
+  grid-template-rows: repeat(2, 45vh);
   overflow: hidden;
   justify-content: center;
-  gap: 18px;
+  gap: 14px;
   padding: 10px;
 }
 .course-Items {
-  margin-top: 4%;
+  margin-top: 2%;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -24,8 +27,8 @@
 }
 .icon-img i {
   margin-bottom: 2%;
-  font-size: 35px;
-  border: 2px solid rgb(218, 218, 218);
+  font-size: 28px;
+  border: 2px solid #225ecc;
   border-radius: 100%;
   padding: 30px 30px;
   -webkit-border-radius: 100%;
@@ -41,4 +44,8 @@
   -moz-transition: ease-in-out 0.4s;
   -ms-transition: ease-in-out 0.4s;
   -o-transition: ease-in-out 0.4s;
+}
+.courseCaption p {
+  font-size: 14px;
+  line-height: 20px;
 }

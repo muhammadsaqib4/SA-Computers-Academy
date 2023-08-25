@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import salogo from "./salogo.png";
 import "./Header.css";
+import { Link, Outlet } from "react-router-dom";
 
 function Navigation() {
   return (
@@ -13,27 +14,29 @@ function Navigation() {
           <div className="navMenu">
             <ul>
               <li>
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="/">Courses</a>
+                <Link to="/Courses">Courses</Link>
               </li>
               <li>
-                <a href="/">Pricing</a>
+                <Link to="/Pricing">Pricing</Link>
               </li>
               <li>
-                <a href="/">About us</a>
+                <Link to="/">About us</Link>
               </li>
 
               <li>
-                <a href="/" className="login btn">
+                <Link to="/Login" className="login btn">
                   Login
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+
+      <Outlet />
     </Fragment>
   );
 }

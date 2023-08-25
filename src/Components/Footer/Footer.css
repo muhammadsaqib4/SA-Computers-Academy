@@ -1,0 +1,31 @@
+.Footer-Container {
+  background: linear-gradient(180deg, #1a2848, 80%, #0b0e1c);
+  display: flex;
+  color: white;
+  flex-direction: row;
+}
+
+.footer-Items {
+  display: flex;
+  flex-direction: row;
+}
+.each-item {
+}
+
+.Intro {
+  width: 30%;
+}
+
+.Intro p {
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+}
+
+.each-item li {
+  list-style-type: none;
+
+  color: white;
+}
+.mapouter{position:relative;text-align:right;height:400px;width:600px;}
+.gmap_canvas{overflow:hidden;background:none!important;height:400px;width:600px;}

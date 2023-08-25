@@ -1,0 +1,98 @@
+.Pricing-Container {
+  background: #fafafa;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3em 6em;
+}
+.Each-Price-Container {
+  background: white;
+  width: 30%;
+  text-align: center;
+  justify-content: center;
+  /*height: 35em;
+  */
+  display: flex;
+  padding: 3em 0em;
+  justify-content: center;
+  box-shadow: 6px 6px 15px -7px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+.Each-Price-Container:hover .Rs-Caption {
+  transform: fade-up;
+  transition: ease-out 0.4s;
+  box-shadow: 3px 3px 15px -5px;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  -ms-transition: ease-out 0.4s;
+  -o-transition: ease-out 0.4s;
+  -webkit-transform: fade-up;
+  -moz-transform: fade-up;
+  -ms-transform: fade-up;
+  -o-transform: fade-up;
+}
+h2 {
+  color: #225ecc;
+  font-family: century gothic;
+}
+.Rs-Caption {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: century Gothic;
+  padding: 10px 70px;
+  border-radius: 130px;
+  background: #a2c2ff;
+  -webkit-border-radius: 130px;
+  -moz-border-radius: 130px;
+  -ms-border-radius: 130px;
+  -o-border-radius: 130px;
+}
+.Rs-Caption #Rupees {
+  margin-bottom: 10px;
+}
+.Rs-Caption #month {
+  margin-bottom: -12px;
+}
+
+.price-list {
+  list-style-type: none;
+  text-align: left;
+  line-height: 40px;
+}
+
+.price-list li:before {
+  content: "✓ ";
+  padding: none;
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chooosePlan-btn {
+  margin: 17% 15%;
+  padding: 15px 30px;
+  background: white;
+  font-weight: bold;
+  border: #225ecc 2.5px solid;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.chooosePlan-btn:hover {
+  background: #225ecc;
+  color: white;
+  transition: ease-in-out.5s;
+  -webkit-transition: ease-in-out.5s;
+  -moz-transition: ease-in-out.5s;
+  -ms-transition: ease-in-out.5s;
+  -o-transition: ease-in-out.5s;
+}

@@ -1,14 +1,15 @@
 import { Fragment, useContext } from "react";
 import { CourseContext } from "../Context/courseContext";
 import "../Courses/Course.css";
+import { Outlet } from "react-router-dom";
 
 function Courses() {
-  const { course, setCourse } = useContext(CourseContext);
+  const { course } = useContext(CourseContext);
   console.log(course);
 
   return (
     <Fragment>
-      <div>
+      <div className="container-course">
         <div className="Course-Category Container">
           <h1>COURSE CATEGORY</h1>
           <p>
@@ -29,6 +30,7 @@ function Courses() {
           </div>
         </div>
       </div>
+      <Outlet />
     </Fragment>
   );
 }
