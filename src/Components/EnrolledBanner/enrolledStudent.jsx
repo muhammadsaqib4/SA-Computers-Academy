@@ -37,7 +37,7 @@ function EnrolledBanner() {
       <div className="Items">
         {userInfo.map((data) => (
           <div className="img-icon">
-            <i class={data.img}></i>
+            <i className={data.img}></i>
             <h1>
               <Counter number={data.counter} />
             </h1>

@@ -9,12 +9,13 @@
   justify-content: space-between;
 }
 .gif-animation img {
-  border-radius: 100% 30%;
+  height: 440px;
+  border-radius: 100% 40%;
   box-shadow: #225ecc 0px 17px 10px -15px;
-  -webkit-border-radius: 100% 30%;
-  -moz-border-radius: 100% 30%;
-  -ms-border-radius: 100% 30%;
-  -o-border-radius: 100% 30%;
+  -webkit-border-radius: 100% 40%;
+  -moz-border-radius: 100% 40%;
+  -ms-border-radius: 100% 40%;
+  -o-border-radius: 100% 40%;
 }
 
 .first-Content {
@@ -38,7 +39,7 @@ p {
     "Lucida Sans", Arial, sans-serif;
 }
 .getStarted {
-  margin-top: 4em;
+  margin-top: 3em;
   font-size: 18px;
   padding: 15px 50px;
   border: none;

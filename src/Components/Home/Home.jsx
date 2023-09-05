@@ -2,12 +2,15 @@ import { Fragment } from "react";
 import home from "./home.gif";
 import "./Home.css";
 import EnrolledBanner from "../EnrolledBanner/enrolledStudent";
-import Footer from "../Footer/Footer";
 import Courses from "../Courses/Courses";
 import OurCourses from "../OurCourses/OurCourse";
 import Pricing from "../Pricing/pricing";
 
 function Home() {
+
+  const handleGetStarted=()=>{
+    
+  }
   return (
     <Fragment>
       <div className="Container">
@@ -29,7 +32,7 @@ function Home() {
               Learn skills with hands on <br /> experience
             </p>
 
-            <button type="submit" className="getStarted btn">
+            <button type="submit" className="getStarted btn" onClick={handleGetStarted}>
               Get Started
             </button>
           </div>

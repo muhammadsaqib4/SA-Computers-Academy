@@ -7,6 +7,7 @@ import OurCourses from "./Components/OurCourses/OurCourse";
 import Pricing from "./Components/Pricing/pricing";
 import Footer from "./Components/Footer/Footer";
 import Login from "./Components/Login/Login";
+import SignUp from "./Components/SignUp/SignUp";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Courses" element={<OurCourses />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/SignUp" element={<SignUp />} />
         </Route>
       </Routes>
       <Footer />

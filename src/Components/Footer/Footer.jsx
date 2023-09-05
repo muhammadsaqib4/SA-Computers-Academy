@@ -1,6 +1,5 @@
 import { Fragment, useState } from "react";
 import "./Footer.css";
-import { Outlet } from "react-router-dom";
 function Footer() {
   const [footerItem] = useState([
     {
@@ -85,7 +84,7 @@ function Footer() {
                 src="https://maps.google.com/maps?q=SA%20Computers%20Academy%20Jinnah%20Road&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
                 id="gmap_canvas"
                 frameborder="0"
-                scrolling="no"
+                scrolling="yes"
                 style={{ width: "600px", height: "400px" }}
               ></iframe>
             </div>

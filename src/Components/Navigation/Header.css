@@ -1,6 +1,12 @@
 .navbar {
   width: 100%;
   box-shadow: 0px 0px 6px;
+  border-radius: 0px 0px 20px 20px;
+  border-bottom: #225ecc 5px solid;
+  -webkit-border-radius: 0px 0px 20px 20px;
+  -moz-border-radius: 0px 0px 20px 20px;
+  -ms-border-radius: 0px 0px 20px 20px;
+  -o-border-radius: 0px 0px 20px 20px;
 }
 
 .navContainer {
@@ -8,12 +14,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 15px;
+  padding: 9px 15px;
   margin-left: 5%;
 }
 
 .navLogo img {
-  height: 3em;
+  height: 2.3em;
 }
 
 .navMenu ul {
@@ -49,7 +55,7 @@ a:hover {
 }
 
 .login {
-  padding: 10px 20px 13px 20px;
+  padding: 8px 14px 10px 14px;
 }
 
 .btn:hover {

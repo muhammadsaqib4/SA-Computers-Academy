@@ -64,7 +64,7 @@ function Pricing() {
                 <li>{item.source}</li>
                 <li>
                   {item.certificate}
-                  <i class="  fa fa-certificate "></i>
+                  <i className="  fa fa-certificate "></i>
                 </li>
               </ul>
               <button type="submit" className="chooosePlan-btn">
