@@ -1,6 +1,5 @@
-import { Fragment, useEffect } from "react";
+import { Fragment, useEffect, useState } from "react";
 import "./Login.css";
-import { useState } from "react";
 import salogo from "../Navigation/salogo.png";
 import login from "./login.gif";
 import {
@@ -11,6 +10,7 @@ import {
 import { Link } from "react-router-dom";
 
 function Login() {
+  // const history = useHistory();
   const googleSign = async () => {
     const { user } = await signInWithGooglePopup();
     const response = await createUserDocumentFromAuth(user);
@@ -23,7 +23,7 @@ function Login() {
         setSuccessMassage(false);
       }, 3000);
 
-      History.push("/Home");
+      // history.push("/Home");
     } else {
       console.error("Sign in Error:", user.error);
     }
@@ -69,7 +69,7 @@ function Login() {
         setSuccessMassage(false);
       }, 3000);
 
-      History.push("/Home");
+      // history.push("/Home");
     } else {
       // Handle sign-in error
       setValidation(false);

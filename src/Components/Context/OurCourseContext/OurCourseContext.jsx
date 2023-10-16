@@ -17,6 +17,12 @@ export const OurCourseProvider = ({ children }) => {
       name: "Basics of Computer",
       description:
         "Learn how to meet Office needs, How to manage documentations, and design the work flow as well.",
+       instructorImg: "",
+      instructor: "Muhammad Saqib",
+      reviews: "4.7",
+      duration: "3 months",
+      certificate: "",
+      classTime: "1 hour",
     },
 
     {
@@ -25,6 +31,10 @@ export const OurCourseProvider = ({ children }) => {
       name: "Graphic Designing",
       description:
         "Learn the basic sense of designing, enhance your creativity and Read the concept convert into graphics.",
+      reviews: "4.7",
+      duration: "3 months",
+      certificate: "",
+      classTime: "1 hour",
     },
 
     {
@@ -33,6 +43,10 @@ export const OurCourseProvider = ({ children }) => {
       name: "Freelancing",
       description:
         "Earn money using skills at comfort home. Become a successful freelancer. Earn from Home",
+      reviews: "4.7",
+      duration: "2 months",
+      certificate: "",
+      classTime: "2 hour",
     },
 
     {
@@ -41,6 +55,10 @@ export const OurCourseProvider = ({ children }) => {
       name: "Web Designing",
       description:
         "Learn how to meet Office needs, How to manage documentations, and design the work flow as well.",
+      reviews: "4.7",
+      duration: "3 months",
+      certificate: "",
+      classTime: "2 hours",
     },
 
     {
@@ -49,6 +67,10 @@ export const OurCourseProvider = ({ children }) => {
       name: "Web Development",
       description:
         "Learn how to meet Office needs, How to manage documentations, and design the work flow as well.",
+      reviews: "4.7",
+      duration: "3 months",
+      certificate: "",
+      classTime: "2 hours",
     },
 
     {
@@ -57,6 +79,10 @@ export const OurCourseProvider = ({ children }) => {
       name: "Mobile App Development",
       description:
         "Learn how to meet Office needs, How to manage documentations, and design the work flow as well.",
+      reviews: "4.7",
+      duration: "3 months",
+      certificate: "",
+      classTime: "2 hours",
     },
   ]);
 

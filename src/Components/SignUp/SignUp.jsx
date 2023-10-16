@@ -11,14 +11,7 @@ import {
 
 function SignUp() {
   const [signUpData, setsignUpData] = useState({});
-
-  // const [fieldValid, setFieldValid] = useState({
-  //   fullName: "",
-  //   email: "",
-  //   password: "",
-  //   confirm: "",
-  // });
-  // const [checkPassword, setCheckPassword] = useState();
+  const [successMassage, setSuccessMassage] = useState(false);
 
   const [emailExists, setEmailExists] = useState(false);
 
@@ -31,11 +24,6 @@ function SignUp() {
       ...prevUserData,
       [name]: value,
     }));
-
-    // setFieldValid((prevFieldClasses) => ({
-    //   ...prevFieldClasses,
-    //   [name]: value.trim() === "" ? "input-red" : "input-green",
-    // }));
   };
 
   useEffect(() => {
@@ -45,6 +33,17 @@ function SignUp() {
   const signUpHandler = async (event) => {
     event.preventDefault();
 
+    if (
+      !signUpData.fullName ||
+      !signUpData.email ||
+      !signUpData.password ||
+      !signUpData.confirmPassword
+    ) {
+      // Check if email and password are empty
+      setValidation(true);
+
+      return false;
+    }
     const data = await SignUpForm(signUpData.email, signUpData.password);
 
     console.log("Registerd", data);
@@ -63,12 +62,12 @@ function SignUp() {
       );
       console.log("Response", response);
 
-      // setSuccessMassage(true);
-      // setTimeout(() => {
-      //   setSuccessMassage(false);
-      // }, 3000);
+      setSuccessMassage(true);
+      setTimeout(() => {
+        setSuccessMassage(false);
+      }, 3000);
 
-      // History.push("/Home");
+      History.push("/Home");
     } else {
     }
   };
@@ -84,11 +83,11 @@ function SignUp() {
             <h1>Sign up</h1>
             <h3>Are you not have an account</h3>
             <div className="messageContainer">
-              {/* {successMassage && (
+              {successMassage && (
                 <div className="successMassage">
                   Your account has been created successfully
                 </div>
-              )} */}
+              )}
               {emailExists && <div>Email is already registered.</div>}
             </div>
             <form>
@@ -98,45 +97,46 @@ function SignUp() {
                 name="fullName"
                 placeholder="Full Name"
                 onChange={changeHandler}
+                className={
+                  validation && !signUpData.fullName ? "input-error" : ""
+                }
               />
-              {/* {alertMessage && (
-                <Fragment>
-                  <span className="alertMassage">
-                    <i class="fa-solid fa-circle-exclamation"></i> Enter the
-                    Name
-                  </span>
-                </Fragment>
-              )} */}
+              {validation && !signUpData.fullName && (
+                <span className="validation">
+                  <i class="fa-solid fa-circle-exclamation"></i> Email is must
+                  be required
+                </span>
+              )}
               <label className="email">Email</label>
               <input
                 type="email"
                 name="email"
                 placeholder="Email"
                 onChange={changeHandler}
+                className={validation && !signUpData.email ? "input-error" : ""}
               />
-              {/* {alertMessage && (
-                <Fragment>
-                  <span className="alertMassage">
-                    <i class="fa-solid fa-circle-exclamation"></i> Enter the
-                    email
-                  </span>
-                </Fragment>
-              )} */}
+              {validation && !signUpData.email && (
+                <span className="validation">
+                  <i class="fa-solid fa-circle-exclamation"></i> Email is must
+                  be required
+                </span>
+              )}
               <label>Password</label>
               <input
                 type="password"
                 name="password"
                 placeholder="Password"
                 onChange={changeHandler}
+                className={
+                  validation && !signUpData.password ? "input-error" : ""
+                }
               />
-              {/* {alertMessage && (
-                <Fragment>
-                  <span className="alertMassage">
-                    <i class="fa-solid fa-circle-exclamation"></i> Enter the
-                    password
-                  </span>
-                </Fragment>
-              )} */}
+              {validation && !signUpData.password && (
+                <span className="validation">
+                  <i class="fa-solid fa-circle-exclamation"></i> Email is must
+                  be required
+                </span>
+              )}
 
               <label>Confirm Password</label>
               <input
@@ -144,15 +144,16 @@ function SignUp() {
                 name="confirmPassword"
                 placeholder="Confirm Password"
                 onChange={changeHandler}
+                className={
+                  validation && !signUpData.confirmPassword ? "input-error" : ""
+                }
               />
-              {/* {alertMessage && (
-                <Fragment>
-                  <span className="alertMassage">
-                    <i class="fa-solid fa-circle-exclamation"></i> Enter the
-                    confirm password
-                  </span>
-                </Fragment>
-              )} */}
+              {validation && !signUpData.confirmPassword && (
+                <span className="validation">
+                  <i class="fa-solid fa-circle-exclamation"></i> Email is must
+                  be required
+                </span>
+              )}
             </form>
 
             <div className="buttonFlex">
